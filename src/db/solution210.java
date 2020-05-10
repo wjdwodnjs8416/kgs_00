@@ -10,7 +10,7 @@ class solution210 {
                 total += 30000;
             else if(purchase[i] >= 400000)
                 total += 20000;
-            else
+            else if(purchase[i] >= 200000)
                 total += 10000;
         }
         return total;

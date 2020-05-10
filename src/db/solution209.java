@@ -5,7 +5,7 @@ class solution209 {
         int[] counter = new int[N + 1];
         for(int i = 0; i < votes.length; ++i)
             counter[votes[i]] += 1;
-        int answer = -1;
+        int answer = 0;
         for(int i = 0; i <= N; ++i)
             if(counter[i] == K)
                 answer += 1;
@@ -15,9 +15,9 @@ class solution209 {
     // 아래는 테스트케이스 출력을 해보기 위한 main 메소드입니다. main 메소드는 잘못된 부분이 없으니, solution 메소드만 수정하세요.
     public static void main(String[] args) {
         solution209 sol = new solution209();
-        int[] votes = {2, 5, 3, 4, 1, 5, 1, 5, 5, 3};
-        int N = 5;
-        int K = 2;
+        int[] votes = {1, 3, 6, 4, 4, 2, 5, 2, 4, 5, 3, 3, 5, 2, 1, 4};
+        int N = 6;
+        int K = 3;
         int ret = sol.solution(votes, N, K);
 
         // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
