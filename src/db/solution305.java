@@ -19,16 +19,16 @@ class solution305 {
 		}
 
 		if(memberAge.length >= 10) {
-			adultExpense = @@@;
-			childExpense = @@@;
+			adultExpense = adultExpense * 9/10;
+			childExpense = childExpense * 8/10;
 		}
-
 		int totalExpenses = 0;
 		for(int i = 0; i < memberAge.length; i++) {
-			if(@@@)
+			if( memberAge[i] >= 20)
 				totalExpenses += adultExpense;
 			else
 				totalExpenses += childExpense;
+			
 		}
 	
 		return totalExpenses;
